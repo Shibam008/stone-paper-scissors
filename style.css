@@ -1,0 +1,151 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     background-color: rgb(29, 26, 26);
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.game {
+     width: 80vw;
+     height: 70vh;
+     max-width: 450px;
+     background-color: #3d3b3b;
+     border-radius: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     box-shadow: 2px 2px 10px rgba(187, 17, 225, 0.8),
+     -2px -2px 10px rgba(4, 8, 207, 0.8);
+}
+
+.heading {
+     position: absolute;
+     width: 100%;
+     height: 15%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     font-size: 10px;
+     top: 70px;
+     
+}
+
+.user-heading, .computer-heading {
+     width: 30%;height: 100%;
+     background-color: transparent;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 15px;
+     margin-bottom:50px;
+     font-weight: 700;
+     box-shadow: 2px 2px 10px rgba(0,0,0,0.8),
+     -2px -2px 10px rgba(42, 37, 37, 0.8);
+}
+.user-heading{
+     color: rgba(141, 215, 141, 0.8);;
+}
+.computer-heading{
+     color: rgba(124, 207, 233, 0.8);;
+}
+.user-div, .computer-div {
+     margin-top: 40px;
+     
+}
+
+.user-div {
+     text-shadow: 2px 2px 5px rgba(89, 247, 118, 0.8),
+     -2px -2px 5px rgba(3, 180, 0, 0.8);
+}
+.computer-div {
+     text-shadow: 2px 2px 5px rgba(0, 205, 232, 0.8),
+     -2px -2px 5px rgba(7, 241, 233, 0.8);
+}
+.hand{
+     width: 100%;
+     height: 50%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     font-size: 5rem;
+     border-radius: 20px;
+     position: relative;
+     top: 20px;
+     
+}
+
+
+.choices{
+     width: 100%;
+     height: 30%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+
+}
+.myChoice{
+     width: 70px;
+     height: 70px;
+     border-radius: 50%;
+     background-color: transparent;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 2px 2px 10px rgba(0,0,0,0.8),
+     -2px -2px 10px rgba(42, 37, 37, 0.8);
+     transition: 0.2s all;
+     font-size: 30px;
+     cursor: pointer;
+}
+.myChoice:hover{
+     box-shadow: 2px 2px 10px rgba(214, 8, 233, 0.8),
+     -2px -2px 10px rgba(233, 8, 42, 0.8);
+}
+.result {
+     width: 70%;
+     height: 10%;
+     background-color: #383636;
+     border-radius: 10px;
+     
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: 700;
+     font-size: 20px;
+
+}
+.win{
+     box-shadow: inset 2px 2px 20px rgba(8, 233, 19, 0.8),
+     -2px -2px 20px rgba(8, 233, 49, 0.8);
+     color: rgba(8, 233, 49, 0.8);
+}
+.loose {
+     box-shadow: inset 2px 2px 20px rgba(233, 8, 8, 0.8),
+     -2px -2px 20px rgba(233, 8, 8, 0.8);
+     color: rgba(233, 42, 8, 0.8);
+}
+.draw{
+     box-shadow: inset 2px 2px 20px rgba(222, 233, 8, 0.8),
+     -2px -2px 20px rgba(214, 233, 8, 0.724);
+     color: rgba(166, 233, 31, 0.8);
+}
+
+@keyframes shake {
+     0%, 50%, 100% {
+          transform: translateY(0px);
+     }
+     25% {
+          transform: translateY(20px);
+     }
+     75% {
+          transform: translateY(-20px);
+     }
+}
